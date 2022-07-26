@@ -96,28 +96,48 @@ video {
 }
 /* START OF CODE */
 body {
-  font-size: 15px;
-}
-
-.bg-container {
+  font-family: "League Spartan", sans-serif;
   background-image: url(./images/bg-pattern-top-desktop.svg);
   background-position: top left;
   background-repeat: no-repeat;
 }
 
-.bg-bottom {
+/* .bg-container {
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+} */
+
+/* .bg-bottom {
   background-image: url(./images/bg-pattern-bottom-desktop.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
+} */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+h1 {
+  font-size: 42px;
+  color: var(--color-main);
+  font-weight: 700;
 }
 
 .rating {
   display: flex;
-  flex-direction: row;
 }
 ul {
+  display: flex;
   list-style: none;
   flex-direction: row;
+  gap: 8px;
+}
+
+.review-img {
+  border-radius: 50%;
 }
 /* Attribution don't change */
 .attribution {
