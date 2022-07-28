@@ -1,6 +1,74 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+}
+
+/* START */
 :root {
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(212, 45%, 89%);
   --gray-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.card-container {
+  border-radius: 22px;
+  margin: auto;
+  background-color: var(--white);
+  width: 320px;
+  padding: 16px;
+}
+
+.text {
+  margin-top: 1rem;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+p {
+  color: var(--gray-blue);
+  padding-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
