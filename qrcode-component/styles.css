@@ -52,19 +52,20 @@ body {
   padding: 16px;
 }
 
-.text {
-  margin-top: 1rem;
+h1,
+p {
   padding: 8px;
-  margin-bottom: 1rem;
 }
 
 h1 {
+  color: var(--dark-blue);
   font-size: 23px;
+  margin-top: 1rem;
 }
 
 p {
   color: var(--gray-blue);
-  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
