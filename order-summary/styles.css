@@ -25,17 +25,84 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
 /* START */
 :root {
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
-  --lighter-blue: hsl(225, 100%, 98%);
+  --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
 }
 
 body {
-  font-family: "red hat display", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--desaturated-blue);
+}
+
+.card-container {
+  width: 330px;
+  margin: auto;
+}
+
+.card-container img {
+  border-radius: 18px 18px 0px 0px;
+}
+
+.container {
+  padding: 30px;
+  background-color: white;
+  border-radius: 0px 0px 18px 18px;
+}
+
+h1 {
+  color: var(--dark-blue);
+}
+
+.price-container {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.button-payment {
+  background-color: var(--bright-blue);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 12px;
 }
 
 .attribution {
@@ -45,3 +112,13 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* hover */
+button,
+a:hover {
+  cursor: pointer;
+}
+/* 
+.button-payment:hover,
+.button-payment:focus {
+  background-color: var(--desaturated-blue);
+} */
