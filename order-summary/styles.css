@@ -36,20 +36,24 @@ picture {
 :root {
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
-  --very-pale-blue: hsl(225, 100%, 98%);
+  --very-pale-blue: hsl(228, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --active-blue: hsl(245, 83%, 68%);
 }
 
 body {
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
   background-color: var(--pale-blue);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: var(--desaturated-blue);
+  font-size: 16px;
 }
 
 .card-container {
@@ -62,13 +66,21 @@ body {
 }
 
 .container {
-  padding: 30px;
+  padding: 20px;
   background-color: white;
   border-radius: 0px 0px 18px 18px;
 }
 
-h1 {
+.container h1 {
   color: var(--dark-blue);
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 0.8rem;
+}
+
+.container p {
+  margin-bottom: 1rem;
+  padding: 10px;
 }
 
 .price-container {
@@ -77,32 +89,58 @@ h1 {
   justify-content: space-around;
   align-items: center;
   border-radius: 12px;
+  padding: 6px 12px;
 }
 
-ul,
-li {
+ul {
+  font-size: 14px;
+  margin-right: 50px;
   list-style: none;
   padding: 0;
 }
 
+.plan {
+  color: var(--dark-blue);
+  font-weight: 900;
+  text-align: left;
+}
+
+.price-container a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .button-container {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.button {
-  outline: none;
-  border: none;
+button {
+  font-size: 16px;
+  font-family: inherit;
   text-decoration: none;
+  border: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .button-payment {
   background-color: var(--bright-blue);
   color: white;
-  font-weight: 700;
-  padding: 12px;
+  padding: 16px 30px;
   border-radius: 12px;
+  box-shadow: 0px 15px 20px -5px var(--active-blue);
+  z-index: 1;
+}
+
+.button-cancel {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  background-color: white;
+  padding: 12px;
 }
 
 .attribution {
@@ -112,13 +150,29 @@ li {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* hover */
+/* hover and active state */
 button,
 a:hover {
   cursor: pointer;
 }
-/* 
-.button-payment:hover,
-.button-payment:focus {
-  background-color: var(--desaturated-blue);
-} */
+
+a:active {
+  color: var(--active-blue);
+}
+
+.button-payment:active {
+  background-color: var(--active-blue);
+}
+
+.button-cancel:active,
+.button-cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+  }
+}
