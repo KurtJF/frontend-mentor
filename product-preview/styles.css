@@ -83,6 +83,11 @@ h1 {
   font-size: 32px;
 }
 
+.main-text {
+  margin-top: 1rem;
+  line-height: 1.4rem;
+}
+
 .price-container {
   padding: 16px 0px;
   display: flex;
@@ -99,6 +104,7 @@ h1 {
 .old-price {
   text-decoration: line-through;
   margin-left: 20px;
+  font-size: 13px;
 }
 
 button {
@@ -113,6 +119,10 @@ button {
   width: 100%;
   border: 0;
   border-radius: 8px;
+}
+
+.cart-icon {
+  margin-right: 10px;
 }
 
 .attribution {
