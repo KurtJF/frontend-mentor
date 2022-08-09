@@ -59,8 +59,12 @@ main {
   width: 340px;
 }
 
-.product-image {
+.image-mobile {
   border-radius: 12px 12px 0px 0px;
+}
+
+.image-desktop {
+  display: none;
 }
 
 .card-container {
@@ -132,4 +136,46 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Hover */
+
+button:hover {
+  background-color: var(--active-green);
+  cursor: pointer;
+}
+
+/* desktop media query */
+
+@media (min-width: 760px) {
+  main {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+
+  .image-desktop {
+    height: 450px;
+    display: block;
+    border-radius: 12px 0px 0px 12px;
+  }
+
+  .card-container {
+    padding: 28px 32px;
+    border-radius: 0px 12px 12px 0px;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .price-container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
 }
