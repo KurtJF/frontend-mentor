@@ -99,7 +99,7 @@ button {
   border-radius: 2rem;
   background-color: var(--light-gray);
   font-size: 15px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .button-one {
@@ -148,7 +148,7 @@ button:hover {
 
 /* desktop media query */
 
-@media (min-width: 760px) {
+@media (min-width: 930px) {
   .container {
     max-width: 58rem;
     display: flex;
