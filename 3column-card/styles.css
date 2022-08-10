@@ -44,19 +44,74 @@ picture {
 body {
   background-color: var(--light-gray);
   font-size: 15px;
+  text-align: left;
   font-family: "Lexend Deca", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* margin: 5rem 0rem; */
 }
 
-main {
+.container {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+}
+
+.card-container {
+  padding: 50px;
+}
+
+.card-one {
+  background-color: var(--bright-orange);
+  border-radius: 8px 8px 0px 0px;
+  margin-top: 5rem;
+}
+
+.card-two {
+  background-color: var(--dark-cyan);
+}
+
+.card-three {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0px 0px 8px 8px;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.6rem;
 }
 
 h1 {
+  font-size: 40px;
+  text-transform: uppercase;
   font-family: "Big Shoulders Display", serif;
+  color: var(--light-gray);
+  margin: 1.5rem 0rem;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.8rem 2.2rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 2rem;
+  background-color: var(--light-gray);
+  font-size: 15px;
+  margin-top: 2rem;
+}
+
+.button-one {
+  color: var(--bright-orange);
+}
+
+.button-two {
+  color: var(--dark-cyan);
+}
+
+.button-three {
+  color: var(--very-dark-cyan);
 }
 
 .attribution {
@@ -65,4 +120,41 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* hover */
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-one:hover {
+  background-color: var(--bright-orange);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
+/* desktop media query */
+
+@media (min-width: 760px) {
+  .container {
+    max-width: 58rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-one {
+    margin-top: 0;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .card-three {
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  p {
+    margin-bottom: 2.7rem;
+  }
 }
