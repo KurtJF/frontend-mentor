@@ -134,6 +134,18 @@ button:hover {
   color: var(--light-gray);
 }
 
+.button-two:hover {
+  background-color: var(--dark-cyan);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
+.button-three:hover {
+  background-color: var(--very-dark-cyan);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
 /* desktop media query */
 
 @media (min-width: 760px) {
