@@ -109,6 +109,7 @@ p {
 
 .card-4 {
   border-top: 4px solid var(--blue);
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -137,5 +138,12 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 930px) {
+@media (min-width: 900px) {
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 500px;
+  }
 }
