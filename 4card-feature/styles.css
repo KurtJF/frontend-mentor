@@ -41,6 +41,7 @@ picture {
   --dark-blue: hsl(234, 12%, 34%);
   --grayish-blue: hsl(229, 6%, 66%);
   --light-gray: hsl(0, 0%, 98%);
+  --shadow: hsl(203, 67%, 91%);
 }
 
 body {
@@ -55,7 +56,6 @@ body {
 }
 
 header {
-  margin-bottom: 3rem;
   margin-top: 5.5rem;
   margin-bottom: 4.8rem;
   max-width: 310px;
@@ -81,13 +81,14 @@ p {
   flex-direction: column;
   max-width: 310px;
   gap: 1.5rem;
+  margin: auto;
 }
 
 .card-container {
   background-color: white;
   font-size: 13px;
   text-align: left;
-  box-shadow: 0px 5px 10px -2px var(--grayish-blue);
+  box-shadow: 0px 25px 30px -5px var(--shadow);
   display: flex;
   flex-direction: column;
   padding: 1.8rem;
@@ -109,7 +110,7 @@ p {
 
 .card-4 {
   border-top: 4px solid var(--blue);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -120,7 +121,7 @@ h2 {
 img {
   margin-top: 1.6rem;
   align-self: flex-end;
-  width: 23%;
+  width: 22%;
 }
 
 .mid-row {
@@ -138,12 +139,49 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
+  header {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    line-height: 1.6rem;
+  }
+
   .content-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
-    max-width: 500px;
+    max-width: 1200px;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .card-container {
+    max-width: 350px;
+    flex: 1;
+    padding: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 0.6rem;
+  }
+
+  img {
+    margin-top: 2.2rem;
+  }
+
+  .mid-row {
+    gap: 2rem;
+  }
+
+  .card-4 {
+    margin-bottom: 0rem;
   }
 }
