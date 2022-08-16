@@ -146,7 +146,7 @@ li:hover {
 
 /* media query */
 
-@media (min-width: 1000px) {
+@media (min-width: 760px) {
   body {
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
