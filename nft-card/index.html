@@ -24,20 +24,42 @@
   </head>
   <body>
     <main class="card">
-      <div class="card__image">
-        <img src="./images/image-equilibrium.jpg" alt="Cube NFT" />
+      <div class="img__container">
+        <img
+          class="card__img"
+          src="./images/image-equilibrium.jpg"
+          alt="Cube NFT"
+        />
+        <div class="hover-eye fade">
+          <img clas="eye" src="./images/icon-view.svg" alt="eye icon" />
+        </div>
       </div>
       <div class="content__container">
         <h1>Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
-        <img src="./images/icon-ethereum.svg" alt="ethereum icon" />
-        <p>0.041 ETH</p>
-        <img src="./images/icon-clock.svg" alt="clock icon" />
-        <p>3 days left</p>
+        <div class="price">
+          <div class="container">
+            <img
+              class="icon"
+              src="./images/icon-ethereum.svg"
+              alt="ethereum icon"
+            />
+            <p class="text eth">0.041 ETH</p>
+          </div>
+          <div class="container">
+            <img class="icon" src="./images/icon-clock.svg" alt="clock icon" />
+            <p class="text">3 days left</p>
+          </div>
+        </div>
       </div>
-      <span class="line"></span>
+      <hr class="line" />
       <div class="name__container">
-        <img src="./images/image-avatar.png" alt="picture of nft maker" />
+        <img
+          class="picture"
+          src="./images/image-avatar.png"
+          alt="picture of nft
+        maker"
+        />
         <p>Creation of <span class="name">Jules Wyvern</span></p>
       </div>
     </main>
