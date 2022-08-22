@@ -44,18 +44,45 @@ Users should be able to:
 
 ### What I learned
 
-To see how you can add code snippets, see below:
+- Learned how to transition from mobile image to desktop using **media query**
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <img
+    class="image-mobile"
+    src="./images/image-product-mobile.jpg"
+    alt="Product Image"
+      />
+ <img
+    class="image-desktop"
+    src="./images/image-product-desktop.jpg"
+    alt="Product Image"
+      />
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.image-mobile {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media (min-width: 760px) {
+.image-mobile {
+    display: none;
+  }
+
+  .image-desktop {
+    max-height: 450px;
+    display: block;
+    border-radius: 12px 0px 0px 12px;
+  }
 }
 ```
 
 ### Continued development
+
+- Should've contained the <img> inside of a <div class="image__container">
 
 ## Author
 
