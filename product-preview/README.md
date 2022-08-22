@@ -82,7 +82,7 @@ Users should be able to:
 
 ### Continued development
 
-- Should've contained the **img** inside of a **div class="image__container"**
+- Should've contained the '<img>' inside of a '<div class="image__container">'
 
 ## Author
 
