@@ -12,7 +12,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-3-column-card-WBvJjHt3Pd)
+- Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/3column-card/)
 
 ## My process
 
@@ -42,44 +41,47 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Sometimes the best solution to a problem is the simplest one. 
 
-To see how you can add code snippets, see below:
+- Problem: the button was changing its size when the **hover** effect is being applied (since the hover is applying a 2px border outside the button)
+- Solution: adding a 2 px border on the button (when not on hover) so it doesn't change size when hovering.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.8rem 2.2rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 2rem;
+  background-color: var(--light-gray);
+  font-size: 15px;
+  margin-top: 1.5rem;
+}
+
+.button-one:hover {
+  background-color: var(--bright-orange);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
+.button-two:hover {
+  background-color: var(--dark-cyan);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
+}
+
+.button-three:hover {
+  background-color: var(--very-dark-cyan);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- Learn more about media query and how to use it efficiently 
 
 ## Author
 
