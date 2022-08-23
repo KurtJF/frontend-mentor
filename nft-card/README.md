@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned how to put an overlay on a picture when hovering. used **inset property** for the first time.
+Learned how to put an overlay on a picture when hovering. used **inset property and opacity** for the first time.
 
 ```html
 <div class="img__container">
@@ -82,11 +82,6 @@ Learned how to put an overlay on a picture when hovering. used **inset property*
   border-radius: 0.5rem;
 }
 ```
-
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
