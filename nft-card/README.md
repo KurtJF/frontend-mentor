@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -98,8 +98,8 @@ I still need to work on
 
 ### Useful resources
 
-- https://www.youtube.com/watch?v=tF3RE5CGt9U 
-(This helped me with the hover effect on the **card__img**)
+- [This helped me with the hover effect on the **card__img**](https://www.youtube.com/watch?v=tF3RE5CGt9U) 
+
 
 ## Author
 
