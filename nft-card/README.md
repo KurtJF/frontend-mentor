@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here]
+- Solution URL: [Frontend Mentor]()
+- Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/nft-card/)
 
 ## My process
 
@@ -94,7 +94,7 @@ I still need to work on
 
 - CSS transitions
 - CSS positions and when to properly use them
-- Inset property [first time using it on this challenge]
+- Inset property and opacity (first time using it on this challenge)
 
 ### Useful resources
 
