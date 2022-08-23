@@ -57,7 +57,7 @@ body {
 }
 
 .card-container {
-  width: 330px;
+  max-width: 330px;
   margin: auto;
 }
 
