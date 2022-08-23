@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-nft-card-component--p7Kn3ldXg)
 - Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/nft-card/)
 
 ## My process
