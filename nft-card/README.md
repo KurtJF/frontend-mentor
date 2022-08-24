@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here]
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-nft-card-component--p7Kn3ldXg)
+- Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/nft-card/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned how to put an overlay on a picture when hovering. used **inset property** for the first time.
+Learned how to put an overlay on a picture when hovering. used **inset property and opacity** for the first time.
 
 ```html
 <div class="img__container">
@@ -83,18 +83,13 @@ Learned how to put an overlay on a picture when hovering. used **inset property*
 }
 ```
 
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 I still need to work on
 
 - CSS transitions
 - CSS positions and when to properly use them
-- Inset property [first time using it on this challenge]
+- Inset property and opacity (first time using it on this challenge)
 
 ### Useful resources
 
