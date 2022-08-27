@@ -219,4 +219,5 @@ button:hover {
     width: 1300px;
     display: flex;
     justify-content: flex-end;
+    margin-top: 0;
   }
