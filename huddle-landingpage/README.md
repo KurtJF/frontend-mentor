@@ -43,15 +43,15 @@ Users should be able to:
 
 ### What I learned
 
-- Learned how to include svg icons using [Fontawesome](https://fontawesome.com/) and [CSS-Tricks: Change color on hover)(https://css-tricks.com/change-color-of-svg-on-hover/)
-- Tried to use container efficiently (need to think about
+- Learned how to include svg icons using [Fontawesome](https://fontawesome.com/) and [CSS-Tricks: Change color on hover](https://css-tricks.com/change-color-of-svg-on-hover/)
+- Tried to use container efficiently. *need more practice to make code cleaner*
 
 ### Continued development
 
-- Figure out how to structure HTML and CSS better for organization
-- Need to work on optimizing css to prevent repetitive CSS declarations
-- Research how to properly use aria-label / sr-only html for web accessibility functions
-- Practice how to use containers
+- Figure out how to structure **HTML** and **CSS** better for organization
+- Need to work on optimizing CSS to prevent repetitive CSS declarations
+- Research how to properly use `aria-label / sr-only htm` for web accessibility functions
+- Practice how to use **containers** better
 
 ## Author
 
