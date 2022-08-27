@@ -47,7 +47,7 @@ body {
   background-color: var(--violet);
   color: var(--white);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   text-align: center;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
@@ -57,10 +57,9 @@ body {
 
 header {
   height: 6rem;
-  padding: 0 2rem;
 }
 
-.logo__container {
+.header__logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -71,8 +70,8 @@ header {
   width: 8rem;
 }
 
-.hero {
-  margin: 2rem auto auto auto;
+.container {
+  margin: auto;
   max-width: 600px;
   padding: 0 2.2rem;
 }
@@ -118,7 +117,7 @@ ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 ul li a:-webkit-any-link {
@@ -168,21 +167,23 @@ button:hover {
     text-align: left;
   }
 
-  header > img {
-    width: 15rem;
+  header {
+    height: 10rem;
   }
 
-  .hero {
+  .logo {
+    width: 14rem;
+  }
+
+  .container {
     max-width: 1360px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2.5rem;
+    gap: 3rem;
   }
 
-  .flex {
-    flex: 1;
+  .hero {
+    margin-top: 3rem;
   }
 
   .img__container {
@@ -190,7 +191,7 @@ button:hover {
   }
 
   .content__container {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -214,20 +215,8 @@ button:hover {
   }
 
   .social__container {
-    align-self: flex-end;
-    margin-right: 0.5rem;
+    max-width: 100%;
+    width: 1300px;
+    display: flex;
+    justify-content: flex-end;
   }
-
-  ul {
-    gap: 1.2rem;
-  }
-
-  li {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .fa-brands {
-    font-size: 1.1rem;
-  }
-}
