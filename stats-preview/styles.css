@@ -1,7 +1,117 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* START */
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --75-opacity-white: hsla(0, 0%, 100%, 0.75);
+  --60-opacity-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main__container {
+  color: var(--white);
+  width: 330px;
+  margin: auto;
+  background-color: var(--dark-desaturated-blue);
+}
+
+.hero__img {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__img::before,
+.img__mobile::before,
+.img__desktop::before {
+  background-color: var(--soft-violet);
+  position: absolute;
+  border-radius: 0.5rem 0.5rem 0 0;
+  inset: 0;
+}
+
+.img__mobile {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.img__desktop {
+  display: none;
+}
+
+.hero__content {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+.hero__content p {
+  color: var(--60-opacity-white);
+}
+
+.insights {
+  color: var(--soft-violet);
+}
+
+.lower__container {
+  text-transform: uppercase;
+  color: var(--60-opacity-white);
+}
+
 .attribution {
+  color: white;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
