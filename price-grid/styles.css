@@ -1,0 +1,61 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* START */
+:root {
+  --light-cyan: hsl(179, 47%, 52%);
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  background-color: var(--grayish-blue);
+  text-align: left;
+  margin: 0 auto;
+}
+
+.wrapper-one {
+  background-color: var(--white);
+  width: 15rem;
+}
+
+.font-color {
+  color: var(--cyan);
+}
