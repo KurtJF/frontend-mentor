@@ -15,7 +15,9 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+li,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -48,14 +50,63 @@ body {
   font-family: "Karla", sans-serif;
   background-color: var(--grayish-blue);
   text-align: left;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrapper-one {
+.wrapper-container {
+  margin: auto;
+  max-width: 19.4rem;
+  display: grid;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.grid-one {
   background-color: var(--white);
-  width: 15rem;
+}
+
+.sub-text {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+.text-one {
+}
+
+.grid-two {
+  background-color: var(--cyan);
+  color: var(--light-gray);
+}
+
+.grid-three {
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
 }
 
 .font-color {
   color: var(--cyan);
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: var(--bright-yellow);
+  border: none;
+  color: inherit;
+  padding: 1rem 6.2rem;
+  border-radius: 0.4rem;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
 }
