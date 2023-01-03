@@ -1,0 +1,61 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* START */
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray: hsl(0, 0%, 59%);
+  --gray-blue: hsl(227, 10%, 46%);
+}
+
+body {
+  background-color: var(--cyan);
+  background-image: url(../profile-card/images/bg-pattern-top.svg);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
