@@ -31,6 +31,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 /* START */
 :root {
@@ -42,13 +43,59 @@ picture {
 
 body {
   background-color: var(--cyan);
-  background-image: url(../profile-card/images/bg-pattern-top.svg);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, repeat;
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 18px;
   color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.card {
+  max-width: 325px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+  border-radius: 14px;
+}
+
+.bg-img {
+  border-radius: 14px 14px 0px 0px;
+  width: 100%;
+}
+
+.user-img {
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.card-container > p,
+.stat > p {
+  color: var(--gray-blue);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h1 > span {
+  color: var(--gray);
+}
+
+.line {
+  color: var(--gray);
+}
+
+.stat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .attribution {
