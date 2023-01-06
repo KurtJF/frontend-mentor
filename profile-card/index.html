@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <!-- tab icon link -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +21,9 @@
       rel="stylesheet"
     />
 
+    <!-- title  -->
     <title>Frontend Mentor | Profile card component</title>
+
     <!-- css link -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -37,20 +41,22 @@
         </div>
         <!-- user -->
         <div class="card-content">
-          <h1>Victor Crest<span>26</span></h1>
-          <p>London</p>
+          <h1 class="user-name">
+            Victor Crest<span class="user-age">26</span>
+          </h1>
+          <p class="user-city">London</p>
         </div>
         <!-- stats -->
         <section class="stat-container">
-          <div class="stat">
+          <div class="column-one stat">
             <h2>80K</h2>
             <p>Followers</p>
           </div>
-          <div class="stat">
+          <div class="column-two stat">
             <h2>803K</h2>
             <p>Likes</p>
           </div>
-          <div class="stat">
+          <div class="column-three stat">
             <h2>1.4K</h2>
             <p>Photos</p>
           </div>
