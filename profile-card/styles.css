@@ -40,13 +40,14 @@ picture {
   --gray: hsl(0, 0%, 59%);
   --light-gray: hsl(0, 0%, 90%);
   --gray-blue: hsl(227, 10%, 46%);
+  --shadow: hsla(203, 34%, 27%, 0.6);
 }
 
 body {
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg), var(--cyan);
   background-position: right calc(45vw + 5%) bottom 50vh,
-    left calc(45vw + 5%) top 45vh;
+    left calc(48vw + 5%) top 45vh;
   background-repeat: no-repeat;
   font-family: "Kumbh Sans", sans-serif;
   color: var(--dark-blue);
@@ -60,6 +61,7 @@ body {
   background-color: white;
   margin: auto;
   border-radius: 14px;
+  box-shadow: 1px 10px 100px 0px var(--shadow);
 }
 
 .bg-img {
