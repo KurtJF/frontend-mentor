@@ -26,7 +26,6 @@ ul {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* Make images easier to work with */
@@ -34,7 +33,9 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
+
 /* START */
 :root {
   --light-cyan: hsl(179, 47%, 52%);
@@ -42,13 +43,12 @@ picture {
   --bright-yellow: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
-  --white: rgb(255, 255, 255);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
-  font-size: 1rem;
   font-family: "Karla", sans-serif;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-gray);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -67,19 +67,42 @@ h2 {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
 }
 
+.main-text {
+  letter-spacing: 0.3px;
+}
+
 .grid-one {
+  border-radius: 4px 4px 0 0;
+  gap: 1rem;
   background-color: var(--white);
 }
 
-.sub-text {
-  color: var(--bright-yellow);
+.grid-one > .main-text {
+  color: var(--cyan);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
+.grid-one > .sub-text {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
 .text-one {
+  font-size: 14px;
+  color: var(--grayish-blue);
+  line-height: 1.9;
+}
+
+.grid-two,
+.grid-three {
+  height: 14.25rem;
 }
 
 .grid-two {
@@ -87,26 +110,70 @@ h2 {
   color: var(--light-gray);
 }
 
-.grid-three {
-  background-color: var(--light-cyan);
+.grid-two > .main-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-two > p {
   color: var(--light-gray);
 }
 
-.font-color {
-  color: var(--cyan);
+.price {
+  /* font-family: inherit; */
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.month {
+  margin: auto;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: var(--bright-yellow);
+  border: none;
+  color: inherit;
+  padding: 0.9rem 6.2rem;
+  border-radius: 4px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.grid-three {
+  border-radius: 0 0 4px 4px;
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
+  gap: 1rem;
+}
+
+.grid-three > .main-text {
+  font-weight: 700;
+}
+
+ul {
+  gap: 0.5rem;
 }
 
 li {
   list-style-type: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.25rem;
 }
 
-button {
-  background-color: var(--bright-yellow);
-  border: none;
-  color: inherit;
-  padding: 1rem 6.2rem;
-  border-radius: 0.4rem;
-  font-size: inherit;
-  font-weight: 700;
-  font-family: inherit;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
