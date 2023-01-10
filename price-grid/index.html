@@ -21,22 +21,11 @@
     <!-- css link -->
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Single Price Grid Component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main class="wrapper-container">
       <article class="content grid-one">
-        <h2 class="font-color">Join our community</h2>
+        <span class="main-text">Join our community</span>
         <span class="sub-text">30-day, hassle-free money back guarantee</span>
         <p class="text-one">
           Gain access to our full library of tutorials along with expert code
@@ -46,13 +35,16 @@
       </article>
       <section class="wrapper-two">
         <div class="content grid-two">
-          <h2>Monthly Subscription</h2>
-          <p><span class="price">&dollar;29</span>per month</p>
+          <span class="main-text">Monthly Subscription</span>
+          <div class="price-container">
+            <span class="price">&dollar;29</span>
+            <span class="month">per month</span>
+          </div>
           <p>Full access for less than &dollar;1 a day</p>
           <button type="submit" aria-label="sign up">Sign Up</button>
         </div>
         <div class="content grid-three">
-          <h2>Why Us</h2>
+          <span class="main-text">Why Us</span>
           <ul class="features">
             <li>Tutorials by industry experts</li>
             <li>Peer &amp; expert code review</li>
