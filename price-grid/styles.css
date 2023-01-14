@@ -52,8 +52,6 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .wrapper-container {
@@ -126,7 +124,6 @@ h2 {
 }
 
 .price {
-  /* font-family: inherit; */
   font-size: 2rem;
   font-weight: 700;
 }
