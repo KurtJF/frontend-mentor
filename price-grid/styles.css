@@ -3,21 +3,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd,
-li,
-ul {
   margin: 0;
   padding: 0;
 }
@@ -26,14 +11,6 @@ ul {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-  overflow: hidden;
 }
 
 /* START */
@@ -49,19 +26,13 @@ picture {
 body {
   font-family: "Karla", sans-serif;
   background-color: var(--light-gray);
-  text-align: left;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper-container {
+main {
   margin: auto;
   max-width: 19.4rem;
-  display: grid;
-}
-
-h2 {
-  font-size: 1.2rem;
 }
 
 .content {
@@ -71,36 +42,39 @@ h2 {
 }
 
 .main-text {
-  letter-spacing: 0.3px;
+  font-weight: 700;
 }
 
 .grid-one {
   border-radius: 4px 4px 0 0;
-  gap: 1rem;
   background-color: var(--white);
+  height: 16.68rem;
 }
 
 .grid-one > .main-text {
   color: var(--cyan);
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.22rem;
+  margin-top: 0.2rem;
 }
 
 .grid-one > .sub-text {
   color: var(--bright-yellow);
+  letter-spacing: -0.7px;
   font-weight: 700;
-  font-size: 0.9rem;
+  margin-top: 1.6rem;
 }
 
 .text-one {
   font-size: 14px;
   color: var(--grayish-blue);
   line-height: 1.9;
+  margin-top: 1.1rem;
+  letter-spacing: -0.2px;
 }
 
 .grid-two,
 .grid-three {
-  height: 14.25rem;
+  height: 14.23rem;
 }
 
 .grid-two {
@@ -116,11 +90,6 @@ h2 {
 .price-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-}
-
-.grid-two > p {
-  color: var(--light-gray);
 }
 
 .price {
@@ -129,11 +98,17 @@ h2 {
 }
 
 .month {
-  margin: auto;
+  margin-left: 0.6rem;
+}
+
+.grid-two > p {
+  margin-top: 0.4rem;
+  color: var(--light-gray);
+  letter-spacing: -0.2px;
 }
 
 button {
-  margin-top: 2rem;
+  margin-top: 1.9rem;
   background-color: var(--bright-yellow);
   border: none;
   color: inherit;
@@ -142,28 +117,24 @@ button {
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 }
 
 .grid-three {
   border-radius: 0 0 4px 4px;
   background-color: var(--light-cyan);
   color: var(--light-gray);
-  gap: 1rem;
 }
 
 .grid-three > .main-text {
-  font-weight: 700;
-}
-
-ul {
-  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 li {
   list-style-type: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.3px;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.45rem;
 }
 
 .attribution {
