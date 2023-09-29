@@ -35,24 +35,73 @@ ul {
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
+  --card-blue: hsl(215, 27%, 12%);
   --dark-blue: hsl(213, 19%, 18%);
   --darker-blue: hsl(216, 12%, 8%);
+  --bg: hsl(228, 11%, 9%);
 
   --font: "Overpass", sans-serif;
 }
 
 body {
+  min-height: 100vh;
   line-height: 1.5;
   font-family: var(--font);
   font-size: 15px;
-  background-color: var(--darker-blue);
+  background-color: var(--bg);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--medium-grey);
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .card {
-  background-color: var(--darker-blue);
+  background-color: var(--card-blue);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.circle {
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+}
+
+h1 {
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-num {
+  color: var(--medium-grey);
+  width: 42px;
+  height: 42px;
+  line-height: 0.9;
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  border: none;
+  padding: 0.6rem 7rem;
+  border-radius: 1.5rem;
+  color: var(--white);
 }
 
 .attribution {
+  flex: 0;
   font-size: 11px;
   text-align: center;
 }
