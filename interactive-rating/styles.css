@@ -1,3 +1,35 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Start */
+
 :root {
   --primary: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
@@ -7,5 +39,24 @@
   --darker-blue: hsl(216, 12%, 8%);
 
   --font: "Overpass", sans-serif;
-  --font-size: 15px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--font);
+  font-size: 15px;
+  background-color: var(--darker-blue);
+}
+
+.card {
+  background-color: var(--darker-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
