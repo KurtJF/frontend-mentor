@@ -40,9 +40,8 @@ ul {
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
-  --card-blue: hsl(215, 27%, 12%);
+  --card-blue: #161d27;
   --dark-blue: hsl(213, 19%, 18%);
-  --darker-blue: hsl(216, 12%, 8%);
   --bg: hsl(228, 11%, 9%);
 
   --font: "Overpass", sans-serif;
@@ -64,6 +63,11 @@ body {
 
 /* card styles */
 .card {
+  background: linear-gradient(
+    180deg,
+    rgba(49, 58, 70, 1) 0%,
+    rgba(30, 37, 47, 1) 55%
+  );
   background-color: var(--card-blue);
   max-width: 328px;
   border-radius: 0.9rem;
