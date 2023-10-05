@@ -13,6 +13,6 @@ btnNums.forEach((btnNum) => {
   btnNum.addEventListener("click", () => {
     btnNums.forEach((btn) => btn.classList.remove("clicked"));
     btnNum.classList.add("clicked");
-    rating.innerHTML = btnNum.innerHTML;
+    rating.textContent = btnNum.textContent;
   });
 });
