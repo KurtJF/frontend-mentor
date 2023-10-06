@@ -30,28 +30,28 @@
       <section class="rating-state card">
         <!-- Rating state start -->
 
-        <img class="star" src="./images/icon-star.svg" alt="image of a star" />
+        <img class="star" src="./images/icon-star.svg" alt="Star icon" />
         <h1>How did we do?</h1>
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <ul class="btn-container">
-          <li><button class="btn-num circle">1</button></li>
-          <li><button class="btn-num circle">2</button></li>
-          <li><button class="btn-num circle">3</button></li>
-          <li><button class="btn-num circle">4</button></li>
-          <li><button class="btn-num circle">5</button></li>
+        <ul class="btn-container" role="list">
+          <li><button class="btn-num circle" type="listitem">1</button></li>
+          <li><button class="btn-num circle" type="listitem">2</button></li>
+          <li><button class="btn-num circle" type="listitem">3</button></li>
+          <li><button class="btn-num circle" type="listitem">4</button></li>
+          <li><button class="btn-num circle" type="listitem">5</button></li>
         </ul>
-        <button id="submit" class="btn-submit">SUBMIT</button>
+        <button id="submit" class="btn-submit" type="submit">SUBMIT</button>
       </section>
 
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
 
-      <section class="hidden ty-state card">
-        <img src="./images/illustration-thank-you.svg" alt="image of a phone" />
+      <section class="hidden ty-state card" aria-hidden="true">
+        <img src="./images/illustration-thank-you.svg" alt="Image of a phone" />
         <p class="select">
           You selected
           <span id="rating"></span>
