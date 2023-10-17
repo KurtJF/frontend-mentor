@@ -56,6 +56,7 @@ main {
   margin: auto;
 }
 
+/* section - header */
 .header-container {
   margin-top: 3.7rem;
   text-align: center;
@@ -75,6 +76,7 @@ h1 {
   font-size: 1.2rem;
 }
 
+/* section - rating */
 .rating-container {
   margin-top: 2.25rem;
   display: flex;
@@ -106,6 +108,7 @@ h1 {
   letter-spacing: -0.02px;
 }
 
+/* section - review */
 .review-container {
   display: flex;
   flex-direction: column;
@@ -134,7 +137,6 @@ h1 {
 }
 
 .user-name {
-  /* margin-top: 0.2rem; */
   font-size: 1.1rem;
   line-height: 1.2;
 }
@@ -145,7 +147,7 @@ h1 {
 
 .review-subtext {
   margin-top: 1.5rem;
-  font-size: 1.05rem;
+  font-size: 1.04rem;
   line-height: 1.3;
 }
 
@@ -157,4 +159,53 @@ h1 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* desktop view  */
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-header {
+    display: flex;
+    gap: 15rem;
+  }
+
+  .header-container {
+    text-align: left;
+    max-width: 25rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-subtext {
+    line-height: 1.3;
+  }
+
+  .review-container {
+    gap: 1.85rem;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-card {
+    max-width: 21.87rem;
+  }
+
+  .user-two {
+    top: 5rem;
+  }
+
+  .user-three {
+    top: 5rem;
+  }
 }
