@@ -37,6 +37,14 @@ ul {
 
 /* Start */
 
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 500 700 800 900;
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+
 :root {
   /* Use transparency for colour variations to match design.look into using `hsla()`. */
 
@@ -46,12 +54,19 @@ ul {
   --primary-teal: hsl(166, 100%, 37%);
   --primary-blue: hsl(234, 85%, 45%);
 
-  /* Gradients */
   --bg-blue-1: hsl(252, 100%, 67%);
   --bg-blue-2: hsl(241, 81%, 54%);
 
   --secondary-blue-1: hsla(256, 72%, 46%, 1);
   --secondary-blue-2: hsla(241, 72%, 46%, 0);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(var(--bg-blue-1), var(--bg-blue-2) ;);
+
+  --gradient-transparent: linear-gradient(
+    var(--secondary-blue-1),
+    var(--secondary-blue-2) ;
+  );
 
   /* Neutral */
   --white: hsl(0, 0%, 100%);
@@ -59,11 +74,6 @@ ul {
   --lavender: hsl(241, 100%, 89%);
   --dark-blue: hsl(224, 30%, 27%);
 }
-
-/* ### Font
-
-- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
-- Weights: 500, 700, 800 */
 
 body {
   font-size: 18px;
