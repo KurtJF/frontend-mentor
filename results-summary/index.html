@@ -18,24 +18,25 @@
   </head>
   <body>
     <main class="main-container">
-      <section class="result-container card">
-        <h1 class="result-title">Your Result</h1>
+      <section class="result-container card grid-flow" data-spacing="large">
+        <h1 class="title">Your Result</h1>
         <p class="score"><span>76</span> of 100</p>
 
-        <div class="container">
+        <div class="container grid-flow">
           <p class="result-name">Great</p>
           <p class="subtext">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
       </section>
-      <section class="summary-container card">
-        <h2>Summary</h2>
-        <div class="grid-container">
+      <section class="summary-container card grid-flow" data-spacing="large">
+        <h2 class="title">Summary</h2>
+        <div class="item-container grid-flow">
           <!-- Reaction -->
-          <div class="summary-item">
+          <div class="summary-item" data-item-color="red">
             <div class="flex-container">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
@@ -56,9 +57,10 @@
           </div>
 
           <!-- Memory -->
-          <div class="summary-item">
+          <div class="summary-item" data-item-color="yellow">
             <div class="flex-container">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
@@ -93,9 +95,10 @@
           </div>
 
           <!-- Verbal -->
-          <div class="summary-item">
+          <div class="summary-item" data-item-color="teal">
             <div class="flex-container">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
@@ -116,9 +119,10 @@
           </div>
 
           <!-- Visual -->
-          <div class="summary-item">
+          <div class="summary-item" data-item-color="blue">
             <div class="flex-container">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
@@ -149,11 +153,11 @@
         <button class="button" aria-label="continue">Continue</button>
       </section>
     </main>
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/KurtJF">KurtJF</a>.
-    </div>
+    </footer>
   </body>
 </html>
