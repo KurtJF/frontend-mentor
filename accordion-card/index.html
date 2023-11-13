@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./images/illustration-woman-online-mobile.svg" alt="" />
+        <img src="./images/bg-pattern-mobile.svg" alt="" />
+      </header>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <section class="accordion-container">
+        <h1>FAQ</h1>
+        <details class="accordion">
+          <summary>
+            How many team members can I invite?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </details>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <details class="accordion">
+          <summary>
+            What is the maximum file upload size?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </details>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <details class="accordion">
+          <summary>
+            How do I reset my password?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </details>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <details class="accordion">
+          <summary>
+            Can I cancel my subscription?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </details>
+
+        <details class="accordion">
+          <summary>
+            Do you provide additional support?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </details>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/KurtJF">KurtJF</a>.
+    </footer>
+  </body>
 </html>
