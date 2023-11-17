@@ -101,7 +101,6 @@ body {
 /* Main Container */
 
 main {
-  /* align-items: end; */
   max-width: 46rem;
   display: grid;
   align-content: center;
@@ -189,7 +188,6 @@ h2 {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  /* gap: 0.4rem; */
 }
 
 .summary-item {
