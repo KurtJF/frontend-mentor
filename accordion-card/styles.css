@@ -80,32 +80,39 @@ main {
   margin: auto;
   background-color: var(--white);
   max-width: 20rem;
-  /* padding: 1.5rem; */
   border-radius: 1.2rem;
 }
 
-header {
+.img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero-img,
 .hero-shadow {
   width: 13.5rem;
-  position: relative;
+  position: absolute;
+}
+
+.box-desktop {
+  display: none;
 }
 
 .hero-img {
-  bottom: 6rem;
+  z-index: 1;
+  top: -6rem;
 }
 
 .hero-shadow {
-  bottom: 10rem;
+  z-index: 1;
+  top: -7.4rem;
 }
 
 .accordion-container {
+  margin-top: 7.2rem;
   max-width: 18.5rem;
   min-width: 18.5rem;
   padding: 0rem 1.3rem 2.7rem 1.3rem;
@@ -160,6 +167,11 @@ details summary > img {
 
 details[open] .sub-text {
   margin-bottom: 1rem;
+}
+
+/* Desktop Styles */
+
+@media (min-width: 56rem) {
 }
 
 /* Footer  */
