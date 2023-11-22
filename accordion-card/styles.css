@@ -81,7 +81,10 @@ main {
   background-color: var(--white);
   max-width: 20rem;
   border-radius: 1.2rem;
+  box-shadow: 0px 25px 50px -1px rgba(0, 0, 0, 0.4);
 }
+
+/* Image Styles */
 
 .img-container {
   display: flex;
@@ -93,7 +96,7 @@ main {
 
 .hero-img,
 .hero-shadow {
-  width: 13.5rem;
+  /* width: 13.5rem; */
   position: absolute;
 }
 
@@ -111,11 +114,12 @@ main {
   top: -7.4rem;
 }
 
+/* Accordion Styles */
+
 .accordion-container {
-  margin-top: 7.2rem;
   max-width: 18.5rem;
   min-width: 18.5rem;
-  padding: 0rem 1.3rem 2.7rem 1.3rem;
+  padding: 7.2rem 1.3rem 2.7rem 1.3rem;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -126,6 +130,8 @@ h1 {
   font-size: 1.8rem;
   margin-bottom: 0.6rem;
 }
+
+/* Accordion */
 
 details {
   border-bottom: solid 1px var(--light-blue);
@@ -172,6 +178,62 @@ details[open] .sub-text {
 /* Desktop Styles */
 
 @media (min-width: 56rem) {
+  .box-desktop {
+    max-width: 10.8rem;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    z-index: 5;
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    padding: 3.4rem 0rem 4.5rem 0rem;
+    /* flex-direction: row; */
+    max-width: 80rem;
+  }
+
+  .img-container {
+    padding: 10rem;
+    overflow: hidden;
+  }
+
+  .hero-img,
+  .hero-shadow {
+    width: 30rem;
+    position: absolute;
+    left: -5rem;
+  }
+
+  .hero-img {
+    top: 2rem;
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+  }
+
+  .hero-shadow {
+    background-image: url("./images/bg-pattern-desktop.svg");
+  }
+
+  .accordion-container {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  h1 {
+    text-align: left;
+    margin-bottom: 0.8rem;
+  }
+
+  details > summary {
+    font-size: 0.8rem;
+  }
+
+  .sub-text {
+    padding-right: 0rem;
+  }
 }
 
 /* Footer  */
