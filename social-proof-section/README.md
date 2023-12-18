@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-social-proof-section-8tQR1HD1fk)
 - Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/social-proof-section/)
 
 ## My process
@@ -44,14 +44,13 @@ Users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Responsive scaling of background image:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+background: url(./images/bg-pattern-top-desktop.svg),
+  url(./images/bg-pattern-bottom-desktop.svg);
+background-position: right calc(50vw + 5%) bottom 50vh, left calc(48vw + 5%) top
+    50vh;
 ```
 
 ## Author
