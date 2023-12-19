@@ -13,7 +13,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
 
@@ -29,12 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop View](./screenshot-desktop.png)
+![Mobile View](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/results-summary-component-ASd74LqBBJ)
+- Live Site URL: [Github Pages](https://kurtjf.github.io/frontend-mentor/results-summary/)
 
 ## My process
 
@@ -48,33 +48,56 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Using data-attribute to target specific elements
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section
+  class="summary-container card grid-flow"
+  data-spacing="large"
+></section>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.grid-flow[data-spacing="large"] {
+  gap: 2rem;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+```html
+<div class="summary-item" data-item-color="yellow"></div>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```css
+.summary-item[data-item-color="red"] {
+  background-color: var(--transparent-red);
+}
+.summary-item[data-item-color="yellow"] {
+  background-color: var(--transparent-yellow);
+}
+.summary-item[data-item-color="teal"] {
+  background-color: var(--transparent-teal);
+}
+.summary-item[data-item-color="blue"] {
+  background-color: var(--transparent-blue);
+}
+```
 
-### Continued development
+First time linking a local font file to css using @font-face
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```css
+@font-face {
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 500 700 800 900;
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+```
 
 ### Useful resources
+
+- [HTML data-\*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
+
+  - Helped with targeting elements
 
 - [Kevin Powell - Design to Code](https://www.youtube.com/watch?v=KqFAs5d3Yl8)
   - This helped me with learning how to use root efficiently and with CSS best practices in mind.
