@@ -1,0 +1,53 @@
+/*CSS RESET*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* START */
+@font-face {
+  font-family: "Figtree";
+  font-display: swap;
+  font-weight: 500 800;
+  font-optical-sizing: auto;
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+      format("truetype"),
+    url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --secondary-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 7%);
+  --subtext-color: hsl(0, 0%, 50%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
