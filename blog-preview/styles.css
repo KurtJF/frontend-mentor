@@ -59,6 +59,7 @@ body {
   font-family: "Figtree", sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -67,17 +68,25 @@ main {
 }
 
 .card {
+  max-width: 20.5rem;
   background-color: var(--secondary-color);
   border: 1px solid var(--text-color);
-  max-width: 20.5rem;
   border-radius: 1.2rem;
   box-shadow: 8px 8px 0px 0px var(--text-color);
   padding: 1.4rem;
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.illustration {
+.img-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   border-radius: 0.5rem;
+}
+
+.illustration {
+  max-width: inherit;
+  max-height: inherit;
 }
 
 .labels {
@@ -89,7 +98,7 @@ main {
   padding: 0.2rem 0rem;
   text-align: center;
   max-width: 4.6rem;
-  margin: 1.5rem 0rem 1rem 0rem;
+  margin: 1.5rem 0rem 0.8rem 0rem;
 }
 
 .date {
@@ -97,12 +106,19 @@ main {
 }
 
 h1 {
+  margin-top: 0.8rem;
   font-size: 1.25rem;
   font-weight: 900;
   cursor: pointer;
 }
 
-h1:hover + .card {
+h1:hover {
+  color: var(--primary-color);
+  /* box-shadow: 15px 15px 0px 0px var(--text-color); */
+}
+
+.card:hover {
+  /* color: var(--primary-color); */
   box-shadow: 15px 15px 0px 0px var(--text-color);
 }
 
@@ -110,13 +126,14 @@ h1:hover + .card {
   font-size: 0.85rem;
   color: var(--subtext-color);
   letter-spacing: 0.2px;
-  margin: 1rem 0rem 1.5rem 0rem;
+  margin: 0.7rem 0rem 1.5rem 0rem;
 }
 
 .user-container {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  margin-bottom: 0.1rem;
 }
 
 .user-img {
