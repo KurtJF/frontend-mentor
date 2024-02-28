@@ -35,7 +35,6 @@ ul {
 /* START */
 @font-face {
   font-family: "Figtree";
-
   font-display: swap;
   font-weight: 500 800;
   font-optical-sizing: auto;
@@ -45,11 +44,13 @@ ul {
 }
 
 :root {
+  /* colors */
   --primary-color: hsl(47, 88%, 63%);
   --secondary-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 7%);
   --subtext-color: hsl(0, 0%, 50%);
 
+  /* font-weight */
   --semi-bold: 500;
   --extra-bold: 900;
 }
@@ -92,13 +93,15 @@ main {
 .labels {
   background-color: var(--primary-color);
   border-radius: 0.2rem;
-  font-weight: 900;
-  font-style: normal;
   font-size: 0.75rem;
   padding: 0.2rem 0rem;
   text-align: center;
   max-width: 4.6rem;
   margin: 1.5rem 0rem 0.8rem 0rem;
+}
+
+.extra-bold {
+  font-weight: var(--extra-bold);
 }
 
 .date {
@@ -108,18 +111,7 @@ main {
 h1 {
   margin-top: 0.8rem;
   font-size: 1.25rem;
-  font-weight: 900;
   cursor: pointer;
-}
-
-h1:hover {
-  color: var(--primary-color);
-  /* box-shadow: 15px 15px 0px 0px var(--text-color); */
-}
-
-.card:hover {
-  /* color: var(--primary-color); */
-  box-shadow: 15px 15px 0px 0px var(--text-color);
 }
 
 .sub-text {
@@ -141,7 +133,6 @@ h1:hover {
 }
 
 .user-name {
-  font-weight: 900;
   font-size: 0.87rem;
 }
 
@@ -152,4 +143,43 @@ h1:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+h1:hover {
+  color: var(--primary-color);
+}
+
+.card:hover {
+  box-shadow: 15px 15px 0px 0px var(--text-color);
+}
+
+/* bigger screen */
+@media (min-width: 578px) {
+  .card {
+    max-width: 24rem;
+  }
+
+  .img-container {
+    border-radius: 0.8rem;
+  }
+
+  .labels {
+    max-width: 5.15rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    margin: 1.5rem 0rem 0.6rem 0rem;
+  }
+
+  .date {
+    font-size: 0.88rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    letter-spacing: 0.01px;
+  }
 }
