@@ -1,0 +1,64 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* START */
+@font-face {
+  font-family: "Intern";
+  font-display: swap;
+  font-weight: 400 500 700;
+  font-optical-sizing: auto;
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+:root {
+  /* colors */
+  --bg-color: hsl(0, 0%, 8%);
+  --accent-green: hsl(75, 94%, 57%);
+  --card-color: hsl(0, 0%, 12%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --font-color: hsl(0, 0%, 100%);
+
+  /* font-weight */
+  --normal: 400;
+  --semi-bold: 500;
+  --bold: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
