@@ -71,7 +71,6 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  caret-color: black;
 }
 
 .normal {
@@ -151,7 +150,6 @@ body {
 .socials:hover {
   background-color: var(--accent-green);
   color: var(--neutral-grey);
-  caret-color: black;
 }
 
 .attribution {
