@@ -36,3 +36,63 @@ a {
 }
 
 /* START */
+@font-face {
+  font-family: "Fraunces";
+  font-display: swap;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  src: url("./assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --bg-color: hsl(273, 85%, 13%);
+  --neutral-grey: hsl(271, 12%, 34%);
+  --accent-color: hsl(150, 100%, 63%);
+  --off-white: hsl(274, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+
+  --underline: 4px;
+}
+
+body {
+  /* color: var(--white); */
+}
+
+header {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.underline {
+  border-bottom: var(--underline) solid var(--accent-color);
+}
+
+.call-to-action {
+  background-color: var(--accent-color);
+  border: none;
+  padding: ;
+}
+
+main {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
