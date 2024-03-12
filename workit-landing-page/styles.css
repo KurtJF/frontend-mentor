@@ -41,7 +41,7 @@ a {
   font-display: swap;
   font-weight: 600;
   font-optical-sizing: auto;
-  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+  src: url("./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
     format("truetype");
 }
 
@@ -70,6 +70,7 @@ a {
   --heading-L: 5rem;
   --heading-M: 3.5rem;
   --heading-S: 2rem;
+  --heading-info: 1.75rem;
   --body: 1.125rem;
   /* line-height/letter-spacing */
   --line-height-L: 5rem;
@@ -89,6 +90,7 @@ header {
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--white);
 }
 
@@ -101,10 +103,20 @@ header {
 .hero-container::before {
 }
 
+.nav {
+  font-family: inherit;
+  font-weight: 600;
+  background-color: var(--bg-color);
+  border: none;
+  color: inherit;
+}
+
 .underline {
   /* border-bottom: var(--underline) solid var(--accent-color); */
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.25rem;
 }
 
 .underline:hover {
@@ -134,14 +146,74 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 h1 {
   font-weight: var(--semi-bold);
   font-size: 50px;
-  font-family: "Fraunces", serif;
+  font-family: "Fraunces", sans-serif;
   color: var(--white);
-  line-height: var(--line-height-M);
+  line-height: 3.125rem;
+}
+
+.custom-shape-divider-top-1710210228 {
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1710210228 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 32px;
+}
+
+.custom-shape-divider-top-1710210228 .shape-fill {
+  fill: var(--bg-color);
+}
+
+.info-container {
+  background-color: var(--off-white);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.num-container {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.25rem;
+  border: 1px solid var(--bg-color);
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+}
+
+h2 {
+  font-size: var(--heading-info);
+  font-family: "Fraunces", sans-serif;
+  font-weight: var(--semi-bold);
+  margin-top: 24px;
+  margin-bottom: 1rem;
+}
+
+.cta-container {
+  color: var(--white);
+  padding: 1rem;
+}
+
+.cta-card {
+  background-color: var(--bg-color);
+  padding: 2rem;
+}
+
+.cta-header {
+  font-size: var(--heading-S);
 }
 
 footer {
@@ -165,4 +237,11 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1710210228 svg {
+    width: calc(100% + 1.3px);
+    height: 15px;
+  }
 }
