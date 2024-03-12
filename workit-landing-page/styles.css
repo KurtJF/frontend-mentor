@@ -41,7 +41,7 @@ a {
   font-display: swap;
   font-weight: 600;
   font-optical-sizing: auto;
-  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
     format("truetype");
 }
 
@@ -55,6 +55,7 @@ a {
 }
 
 :root {
+  /* colors */
   --bg-color: hsl(273, 85%, 13%);
   --neutral-grey: hsl(271, 12%, 34%);
   --accent-color: hsl(150, 100%, 63%);
@@ -62,30 +63,99 @@ a {
   --white: hsl(0, 0%, 100%);
 
   --underline: 4px;
+  /* font-weight */
+  --normal: 400;
+  --semi-bold: 600;
+  /* font-size */
+  --heading-L: 5rem;
+  --heading-M: 3.5rem;
+  --heading-S: 2rem;
+  --body: 1.125rem;
+  /* line-height/letter-spacing */
+  --line-height-L: 5rem;
+  --line-height-M: 4rem;
+  --line-height-S: 2.5rem;
+  --line-height-body: 2rem;
 }
 
 body {
-  /* color: var(--white); */
+  font-family: "Manrope", sans-serif;
+  line-height: 2rem;
+  text-align: center;
 }
 
 header {
+  padding: 2.5rem 1rem;
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   color: var(--white);
 }
 
+.hero-container {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+.hero-container::before {
+}
+
 .underline {
-  border-bottom: var(--underline) solid var(--accent-color);
+  /* border-bottom: var(--underline) solid var(--accent-color); */
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+.underline:hover {
+  color: var(--accent-color);
 }
 
 .call-to-action {
   background-color: var(--accent-color);
   border: none;
-  padding: ;
+  font-weight: var(--semi-bold);
+  padding: 1rem 1.5rem;
+}
+
+.call-to-action:hover {
+  color: var(--accent-color);
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
 }
 
 main {
+  margin: auto;
+}
+
+.hero-container {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: var(--semi-bold);
+  font-size: 50px;
+  font-family: "Fraunces", serif;
+  color: var(--white);
+  line-height: var(--line-height-M);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
 .attribution {
