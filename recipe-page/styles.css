@@ -36,36 +36,95 @@ a {
 }
 
 /* START */
-:root {
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* ### Primary
+.outfit-var > {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 600, 700;
+  font-style: normal;
+}
 
-- Nutmeg: hsl(14, 45%, 36%)
-- Dark Raspberry: hsl(332, 51%, 32%)
+:root {
+  /* colors */
+  /* primary */
+  --primary: hsl(14, 45%, 36%);
+  --secondary: hsl(332, 51%, 32%);
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(30, 18%, 87%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --brown: hsl(30, 10%, 34%);
 
-### Neutral
+  --normal: 400;
+  --semi-bold: 600;
+  --bold: 700;
 
-- White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
+  --heading-L: 2.5rem;
+  --heading-M: 1.75rem;
+  --heading-S: 1.25rem;
+  --regular: 1rem;
+}
 
-## Typography
+.red {
+  color: var(--primary);
+}
 
-### Body Copy
+.semi-bold {
+  font-weight: var(--semi-bold);
+}
 
-- Font size (paragraph): 16px
+.bold {
+  font-weight: var(--bold);
+}
 
-### Fonts
+body {
+  background-color: var(--eggshell);
+  font-family: "Outfit", sans-serif;
+  color: var(--brown);
+}
 
-- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
-- Weights: 400
+.card-container {
+  background-color: var(--white);
+}
 
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 600, 700 */
+.content-container {
+  padding: 2.5rem 2rem;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--dark-charcoal);
+  font-weight: var(--normal);
+}
+
+.header-subtext {
+  margin-top: 1.5rem;
+}
+
+.prep-time {
+  padding: 1.5rem;
+  background-color: var(--rose-white);
+}
+
+.prep-subtext {
+  font-size: var(--heading-S);
+}
+
+.prep-container > li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: 1rem;
+  margin-bottom: 1rem;
+}
 
 .attribution {
   font-size: 11px;
